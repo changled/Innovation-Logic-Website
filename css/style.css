@@ -53,7 +53,64 @@ img {
    text-transform: uppercase;
 }
 
+.navigation a:hover {
+   background: var(--dark);
+   color: var(--light);
+}
 
+.top_container {
+   position: relative;
+}
+
+.showcase_image {
+   background: url(../graphics/circuit_board.jpg);
+   background-size: cover;
+   min-height: 600px;
+   filter: blur(2px) brightness(70%);
+}
+
+.showcase_content {
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 3px;
+  box-shadow: var(--shadow);
+  bottom: 50px;
+  position: absolute;
+  margin: auto 20px;
+  z-index: 2;
+  padding: 0 10px;
+}
+
+.box_wrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 400px;
+}
+
+.product_box {
+   background: url(https://source.unsplash.com/random/400x400);
+   background-size: cover;
+   width: 400px;
+   height: 400px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+
+.product_box .btn {
+   margin-bottom: 20px;
+}
+
+.products {
+   display: grid;
+   grid-row-gap: 20px;
+   grid-column-gap: 10px;
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   text-transform: uppercase;
+}
 
 
 
